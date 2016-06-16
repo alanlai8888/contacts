@@ -1,0 +1,10 @@
+h1{
+	color: white;
+	padding-left: 20px;
+}
+header{
+	background-color: rgb(45,45,45);
+}
+.hidden{
+	padding:0;
+}
