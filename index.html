@@ -6,6 +6,7 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 		<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
 		<link href="stylesheet.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript"> $(document).ready(function () { $('.dropdown-toggle').dropdown(); }); </script>
 		<title>Contacts</title>
 	</head>
 	
@@ -155,8 +156,15 @@
 		</table>
 	</body>
 	<footer>
-		<div class="dropup">
-			
+		<div class="dropdown">
+			<button class="dropbtn" type="button" data-toggle="dropdown">
+				Email address or Phone number
+				<span class="caret"></span>
+			</button>
+			<div class="dropdown-menu">
+				<a href="#">Phone number</a>
+				<a href="#">Email address</a>
+			</div>
 		</div>
 	</footer>
 </html>
