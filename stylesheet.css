@@ -14,34 +14,40 @@ header{
 #contacttable>tbody>tr:nth-child(odd)>td{
 	background-color: rgb(60,60,60);
 }
+ul{
+	list-style-type:none;
+	padding: 0;
+	margin:0;
+}
+#info2_a{
+	display:none;
+}
+#info2_b{
+	display:none;
+}
+#info2_c{
+	display:none;
+}
+#info2_d{
+	display:none;
+}
+#info2_e{
+	display:none;
+}
+#info2_f{
+	display:none;
+}
+#info2_g{
+	display:none;
+}
+#info2_h{
+	display:none;
+}
+
 #name{
 	padding-left: 30px;
 	float: left;
 	color: white;
-}
-#collapse1{
-		transition: .5s;
-}
-#collapse2{
-		transition: .5s;
-}
-#collapse3{
-		transition: .5s;
-}
-#collapse4{
-		transition: .5s;
-}
-#collapse5{
-		transition: .5s;
-}
-#collapse6{
-		transition: .5s;
-}
-#collapse7{
-		transition: .5s;
-}
-#collapse8{
-		transition: .5s;
 }
 
 .span8{
