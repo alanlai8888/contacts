@@ -29,7 +29,7 @@
 					<td class="span8 panel-title">
 						<ul>
 							<li class="info1">info1</li>
-							<li id="info2_a">info2</li>
+							<li id="info2_a" class="info2">info2</li>
 						</ul>
 					</td>			
 				</tr>
@@ -43,8 +43,8 @@
 					</td>
 					<td class="span8 panel-title">
 						<ul>
-							<li class="show">show</li>
-							<li id="info2_b">hide</li>								
+							<li class="info1">show</li>
+							<li id="info2_b" class="info2">hide</li>								
 						</ul>
 					</td>					
 				</tr>
@@ -58,8 +58,8 @@
 					</td>
 					<td class="span8 panel-title">
 						<ul>
-							<li class="show">show</li>
-							<li id="info2_c">hide</li>								
+							<li class="info1">show</li>
+							<li id="info2_c" class="info2">hide</li>								
 						</ul>
 					</td>						
 				</tr>
@@ -73,8 +73,8 @@
 					</td>
 					<td class="span8 panel-title">
 						<ul>
-							<li class="show">show</li>
-							<li id="info2_d">hide</li>								
+							<li class="info1">show</li>
+							<li id="info2_d" class="info2">hide</li>								
 						</ul>
 					</td>					
 				</tr>
@@ -88,8 +88,8 @@
 					</td>
 					<td class="span8 panel-title">
 						<ul>
-							<li class="show">show</li>
-							<li id="info2_e">hide</li>								
+							<li class="info1">show</li>
+							<li id="info2_e" class="info2">hide</li>								
 						</ul>
 					</td>							
 				</tr>
@@ -103,8 +103,8 @@
 					</td>
 					<td class="span8 panel-title">
 						<ul>
-							<li class="show">show</li>
-							<li id="info2_f">hide</li>								
+							<li class="info1">show</li>
+							<li id="info2_f" class="info2">hide</li>								
 						</ul>
 					</td>					
 				</tr>
@@ -118,8 +118,8 @@
 					</td>
 					<td class="span8 panel-title">
 						<ul>
-							<li class="show">show</li>
-							<li id="info2_g">hide</li>								
+							<li class="info1">show</li>
+							<li id="info2_g" class="info2">hide</li>								
 						</ul>
 					</td>					
 				</tr>
@@ -133,8 +133,8 @@
 					</td>
 					<td class="span8 panel-title">
 						<ul>
-							<li class="show">show</li>
-							<li id="info2_h">hide</li>								
+							<li class="info1">show</li>
+							<li id="info2_h" class="info2">hide</li>								
 						</ul>
 					</td>					
 				</tr>
@@ -148,14 +148,14 @@
 	</body>
 	<footer>
 		<div class="dropdown">
-			<button onclick="dropFunction()" class="dropbtn" type="button" data-toggle="dropdown">
-				Email address or Phone number
+			<button class="btn btn-default " type="button">
+				<span class="selection">Phone Number or Email</span>
 				<span class="caret"></span>
 			</button>
-			<div id="mydropdown" class="dropdown-menu">
-				<a href="#"" id="phone">Phone number</a>
-				<a href="#" id="email" >Email address</a>
-			</div>
+			<select id="mydropdown" class="dropdown-menu" role="menu" onchange="information(this.value)">
+				<option value="phone" id="phone">Phone number</option>
+				<option value="email" id="email">Email address</option>
+			</select>
 		</div>
 	</footer>
 </html>
