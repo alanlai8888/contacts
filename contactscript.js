@@ -1,20 +1,12 @@
-var names = document.getElementById("name");
-var show = document.getElementById("show");
-var hidden = document.getElementById("hide");
-var info1s = document.getElementsByClassName('info1');
-var info2s = document.getElementsByClassName('info2');
+
+
 //"accordion-body collapse" for emails
 function dropfunction(){
 	document.getElementById("mydropdown").classList.toggle("show");
 }
-function clickname2(){
-	if(hidden.style.display == "none")
-		hidden.style.display == "block";
-	else{
-		hidden.style.display = "none";
-	}
-}
 function showphone_hidemail(){
+	var info1s = document.getElementsByClassName('info1');
+	var info2s = document.getElementsByClassName('info2');
 	var i, j;
 	for (i=0; i<info1s.length; i++){
 		info1s[i].style.display = 'block';
@@ -24,6 +16,8 @@ function showphone_hidemail(){
 	}
 }
 function showemail_hidephone(){
+	var info1s = document.getElementsByClassName('info1');
+	var info2s = document.getElementsByClassName('info2');
 	var i, j;
 	for (i=0; i<info1s.length; i++){
 		info2s[i].style.display = 'block';
@@ -32,12 +26,14 @@ function showemail_hidephone(){
 		info1s[j].style.display = 'none'; 
 	}
 }
-function toggle_visibility(id) {
-   var e = document.getElementById(id);
-   if(e.style.display == 'block')
-      e.style.display = 'none';
-   else
-      e.style.display = 'block';
+function toggle_visibility(id){
+	$(function(){
+	   var e = document.getElementById(id);
+	   if(e.style.display == 'block')
+	      e.style.display = 'none';
+	   else
+	      e.style.display = 'block';
+	});
 }
 
 function information(type) {
