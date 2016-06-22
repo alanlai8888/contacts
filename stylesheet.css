@@ -19,6 +19,9 @@ ul{
 	padding: 0;
 	margin:0;
 }
+.info1{
+	display: block;
+}
 .info2{
 	display: none;
 }
