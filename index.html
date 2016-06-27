@@ -1,159 +1,193 @@
 <!DOCTYPE html>
 <html>
-	<head>
+    <head>
 
-		<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-		<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
-		<link href="stylesheet.css" rel="stylesheet" type="text/css" />
-		<script type="text/javascript"> $(document).ready(function () { $('.dropdown-toggle').dropdown(); }); </script>
-		<script src="contactscript.js"></script>
-		<title>Contacts</title>
-	</head>
-	
-	<body >
-		<header>
-			<h1>Contacts</h1>	
-		</header>
-		<!--begin collapsible table-->
-		<table class="table table-striped table-bordered table-condensed" id="contacttable" >
-			<tbody>
-				
-				<tr>
-					<td class="span4 panel-heading">
-						<div class="inline" id="circle">&#x25CF;</div>
-						<!-- <a href="#" id="name" onclick="toggle_visibility();"> -->
-						<a href="#" id="name1">
-							Christian
-						</a>
-					</td>
-					<td class="span8 panel-title">
-						<ul>
-							<li class="info1">info1</li>
-							<li id="info2_a" class="info2">info2</li>
-						</ul>
-					</td>			
-				</tr>
-				
-				<tr>
-					<td class="span4 panel-heading">
-						<div class="inline" id="circle">&#x25CF;</div>
-						<a href="#" id="name2">
-							Rich
-						</a>
-					</td>
-					<td class="span8 panel-title">
-						<ul>
-							<li class="info1">show</li>
-							<li id="info2_b" class="info2">hide</li>								
-						</ul>
-					</td>					
-				</tr>
+        <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+        <link href="stylesheet.css" rel="stylesheet" type="text/css" />
+        <script src="contactscript.js"></script>
+        <title>Contacts</title>
+    </head>
+    
+    <body >
+        <div class="span8" id="contacts-widget">
+            <header>
+                Contacts   
+            </header>
+            <!--begin collapsible table-->
+            <table class="table table-striped table-condensed " id="contact-table" >
+                <tbody>
+                    
+                    <tr class="js-contact">
+                        <td class="span4 panel-heading">
+                            <div class="inline">
+                                Christian
+                            </div>
+                        </td>
+                        <td class="span8 panel-title">
+                            <ul>
+                                <li class="phone">555-5555</li>
+                                <li class="email">john@doe.com</li>
+                                <li class="address">
+                                    <address>
+                                        555 youmamma st
+                                        somecity, CA 90231
+                                    </address>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    
+                    <tr class="js-contact">
+                        <td class="span4 panel-heading">
+                            <div class="inline">
+                                Rich
+                            </div>
+                        </td>
+                        <td class="span8 panel-title">
+                            <ul>
+                                <li class="phone">555-5555</li>
+                                <li class="email">john@doe.com</li>
+                                <li class="address">
+                                    <address>
+                                        555 youmamma st
+                                        somecity, CA 90231
+                                    </address>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
 
-				<tr>
-					<td class="span4 panel-heading">
-						<div class="inline" id="circle">&#x25CF;</div>
-						<a href="#" id="name3">
-							Scott
-						</a>
-					</td>
-					<td class="span8 panel-title">
-						<ul>
-							<li class="info1">show</li>
-							<li id="info2_c" class="info2">hide</li>								
-						</ul>
-					</td>						
-				</tr>
-				
-				<tr>
-					<td class="span4 panel-heading">
-						<div class="inline" id="circle">&#x25CF;</div>
-						<a href="#" id="name4">
-							Danny
-						</a>
-					</td>
-					<td class="span8 panel-title">
-						<ul>
-							<li class="info1">show</li>
-							<li id="info2_d" class="info2">hide</li>								
-						</ul>
-					</td>					
-				</tr>
-				
-				<tr>
-					<td class="span4 panel-heading">
-						<div class="inline" id="circle">&#x25CF;</div>
-						<a href="#" id="name5">
-							Taka
-						</a>
-					</td>
-					<td class="span8 panel-title">
-						<ul>
-							<li class="info1">show</li>
-							<li id="info2_e" class="info2">hide</li>								
-						</ul>
-					</td>							
-				</tr>
-				
-				<tr>
-					<td class="span4 panel-heading">
-						<div class="inline" id="circle">&#x25CF;</div>
-						<a href="#" id="name6">
-							Tim
-						</a>
-					</td>
-					<td class="span8 panel-title">
-						<ul>
-							<li class="info1">show</li>
-							<li id="info2_f" class="info2">hide</li>								
-						</ul>
-					</td>					
-				</tr>
-				
-				<tr>
-					<td class="span4 panel-heading">
-						<div class="inline" id="circle">&#x25CF;</div>
-						<a href="#" id="name7">
-							Patrick
-						</a>
-					</td>
-					<td class="span8 panel-title">
-						<ul>
-							<li class="info1">show</li>
-							<li id="info2_g" class="info2">hide</li>								
-						</ul>
-					</td>					
-				</tr>
-				
-				<tr>
-					<td class="span4 panel-heading">
-						<div class="inline" id="circle">&#x25CF;</div>
-						<a href="#" id="name8">
-							Jacques
-						</a>
-					</td>
-					<td class="span8 panel-title">
-						<ul>
-							<li class="info1">show</li>
-							<li id="info2_h" class="info2">hide</li>								
-						</ul>
-					</td>					
-				</tr>
-				
-			</tbody>
-		</table>
+                    <tr class="js-contact">
+                        <td class="span4 panel-heading">
+                            <div class="inline">
+                                Scott
+                            </div>
+                        </td>
+                        <td class="span8 panel-title">
+                            <ul>
+                                <li class="phone">555-5555</li>
+                                <li class="email">john@doe.com</li>
+                                <li class="address">
+                                    <address>
+                                        555 youmamma st
+                                        somecity, CA 90231
+                                    </address>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
 
-	</body>
-	<footer>
-		<div class="dropdown">
-			<button class="btn btn-default " type="button">
-				<span class="selection">Phone Number or Email</span>
-				<span class="caret"></span>
-			</button>
-			<select id="mydropdown" class="dropdown-menu" role="menu" onchange="information(this.value)">
-				<option value="phone" id="phone">Phone number</option>
-				<option value="email" id="email">Email address</option>
-			</select>
-		</div>
-	</footer>
+                    <tr class="js-contact">
+                        <td class="span4 panel-heading">
+                            <div class="inline">
+                                Danny
+                            </div>
+                        </td>
+                        <td class="span8 panel-title">
+                            <ul>
+                                <li class="phone">555-5555</li>
+                                <li class="email">john@doe.com</li>
+                                <li class="address">
+                                    <address>
+                                        555 youmamma st
+                                        somecity, CA 90231
+                                    </address>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                    <tr class="js-contact">
+                        <td class="span4 panel-heading">
+                            <div class="inline">
+                                Taka
+                            </div>
+                        </td>
+                        <td class="span8 panel-title">
+                            <ul>
+                                <li class="phone">555-5555</li>
+                                <li class="email">john@doe.com</li>
+                                <li class="address">
+                                    <address>
+                                        555 youmamma st
+                                        somecity, CA 90231
+                                    </address>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                    <tr class="js-contact">
+                        <td class="span4 panel-heading">
+                            <div class="inline"> 
+                                Tim
+                            </div>
+                        </td>
+                        <td class="span8 panel-title">
+                            <ul>
+                                <li class="phone">555-5555</li>
+                                <li class="email">john@doe.com</li>
+                                <li class="address">
+                                    <address>
+                                        555 youmamma st
+                                        somecity, CA 90231
+                                    </address>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                    <tr class="js-contact">
+                        <td class="span4 panel-heading">
+                            <div class="inline">
+                                Patrick
+                            </div>
+                        </td>
+                        <td class="span8 panel-title">
+                            <ul>
+                                <li class="phone">555-5555</li>
+                                <li class="email">john@doe.com</li>
+                                <li class="address">
+                                    <address>
+                                        555 youmamma st
+                                        somecity, CA 90231
+                                    </address>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                    <tr class="js-contact">
+                        <td class="span4 panel-heading">
+                            <div class="inline">
+                                Jacques
+                            </div>
+                        </td>
+                        <td class="span8 panel-title">
+                            <ul>
+                                <li class="phone">555-5555</li>
+                                <li class="email">john@doe.com</li>
+                                <li class="address">
+                                    <address>
+                                        555 youmamma st
+                                        somecity, CA 90231
+                                    </address>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+            <footer>
+                <select class="dropdown">
+                    <option value="email">Email address</option>
+                    <option value="phone">Phone number</option>
+                </select>
+             </footer>
+        </div>
+    </body>
+
 </html>
