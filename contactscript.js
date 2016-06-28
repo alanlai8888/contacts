@@ -18,8 +18,17 @@ $(document).ready(function(){
         },
 
         onClickContact: function(e) {
+            try{
+                lastClicked.toggleClass(this.isExpandedClass);
+            }
+            catch(e){
+                alert(e);
+            }
+            // if(lastClick === undefined){
+            //     lastClicked.toggleClass(this.isExpandedClass);
+            // }
             $(e.currentTarget).toggleClass(this.isExpandedClass);
-
+            lastClicked = $(e.currentTarget);
         },
 
         onChangeSelect: function() {
