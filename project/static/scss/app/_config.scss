@@ -1,0 +1,50 @@
+// -------------------------------- //
+// ASSETS
+// -------------------------------- //
+$staticUrl: env_or_default("STATIC_URL", "/static/");
+
+// -------------------------------- //
+// ANIMATION
+// -------------------------------- //
+
+$transTime:          0.3s;
+$transTimeFast:      $transTime * 0.5;
+$transTimeSlow:      $transTime * 1.5;
+$transTimeSuperSlow: $transTime * 2;
+$easeDefault:        $ease-out-cubic;
+
+// -------------------------------- //
+// COLORS
+// -------------------------------- //
+
+// Basic
+
+$white:             #fff;
+$black:             #000;
+
+// -------------------------------- //
+// TYPOGRPAPHY
+// ---------------------------------//
+
+
+// -------------------------------- //
+// GRID CONFIG
+// ---------------------------------//
+
+$grid-columns: 12;
+
+// container padding is caculated thusly:
+// $grid-gutter-width/2
+$grid-gutter-width: 30px;
+
+$screen-xs: 544px;
+$screen-sm: 768px;
+$screen-md: 992px;
+$screen-lg: 1200px;
+$screen-xs-max: ($screen-sm - 1);
+$screen-sm-max: ($screen-md - 1);
+$screen-md-max: ($screen-lg - 1);
+
+$container-sm: (720px + $grid-gutter-width);
+$container-md: (940px + $grid-gutter-width);
+$container-lg: (1140px + $grid-gutter-width);
