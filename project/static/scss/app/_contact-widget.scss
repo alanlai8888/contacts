@@ -1,20 +1,23 @@
 
 #contacts-widget{
-    background-color:#2d2d2d;
-    border-radius: 25px;
-    width: 300px;
+    width: 276px;
     position: relative;
     margin-top: 20px;
     left: 35%;
+    background-color:#2d2d2d;
+    border-radius: 15px;
+    box-shadow: 0px 5px 5px #bfbfbf;
 }
 header{
-    background-color: rgb(45,45,45);
-    color: white;
-    border-radius: 25px;
-    height: 30px;
     position: relative;
+    height: 30px;
     padding-top: 20px;
     padding-left: 20px;
+    border-radius: 15px;
+    background: linear-gradient(#4b4b4b, #262626);
+    color: white;
+    font-size: 125%;
+    z-index: 5;
 }
 #contact-table{
     border: 1px solid black;
@@ -22,7 +25,6 @@ header{
     border-bottom: 2px solid black;
     margin-bottom: 0;
 }
-
 table, tr, td{
     border: 1px solid black;    
 }
@@ -32,15 +34,29 @@ table, tr, td{
 #contact-table > tbody > tr:nth-child(odd) > td{
     background-color: rgb(60,60,60);
 }
+tbody{
+    position: relative;
+}
 tr{
-    height:30px;
+    height: 30px;
+    overflow: hidden;
+    position: relative;
+}
+td{
+    position: absolute;
+    z-index: 0;
 }
 ul{
     list-style-type: none;
     margin: 0;
+    z-index: 0;
 }
 li{
     margin-left: 5px;
+    z-index: 0;
+}
+.is-overlapping{
+    z-index: 5;
 }
 .info1{
     display: block;
@@ -48,62 +64,60 @@ li{
 .info2{
     display: none;
 }
-.phone, .address {
+.phone, .address{
     display: none;
 }
-.is-showing-phone .phone {
+.is-showing-phone .phone{
     display: block;
 }
-.is-showing-phone .email {
+.is-showing-phone .email{
     display: none;
 }
-.is-expanded .phone, .is-expanded .address {
+.is-expanded .phone, .is-expanded .address{
     display: block;
     color: white;
 }
-.is-showing-phone .is-expanded .phone, .is-expanded .email {
+.is-showing-phone .is-expanded .phone, .is-expanded .email{
     display: block;
     color: white;
 }
 .inline{
     position: relative;
-    margin-left: 22px;
+    top: 0px;
+    margin-left: 31px;
 }
 .inline::before{
     content: '';
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: rgb(65,209,87);
     position: absolute;
+    display: inline-block;
+    width: 7px;
+    height: 7px;
     top:5px;
     left: -17px;
-
+    border-radius: 50%;
+    background: rgb(65,209,87);
 }
 #name{
     padding-left: 30px;
     float: left;
     color: white;
 }
-
-.span4{
-    color:white;
+.table .span4{
+    color: white;
 }
-
 .span8{
     color: grey;
 }
-
 select{
     float: right;
-    margin: 15px 5px;
+    margin: 15px 20px;
     height: 19px;
 }
 footer{
     background-color: rgb(45,45,45);
-    border-radius: 25px;
+    border-radius: 15px;
     height: 50px;
     overflow: hidden;    
+    z-index: 0;
 }
 
