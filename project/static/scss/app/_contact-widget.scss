@@ -1,6 +1,6 @@
 
 #contacts-widget{
-    width: 276px;
+    width: 285px;
     position: relative;
     margin-top: 20px;
     left: 35%;
@@ -10,8 +10,8 @@
 }
 header{
     position: relative;
-    height: 30px;
-    padding-top: 20px;
+    height: 50px;
+    padding-top: 15px;
     padding-left: 20px;
     border-radius: 15px;
     background: linear-gradient(#4b4b4b, #262626);
@@ -107,6 +107,9 @@ li{
 }
 .span8{
     color: grey;
+    font-size: 95%;
+    margin-left: 111px;
+    width: 61%;
 }
 select{
     float: right;
