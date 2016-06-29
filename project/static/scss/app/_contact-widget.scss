@@ -4,17 +4,17 @@
     position: relative;
     margin-top: 20px;
     left: 35%;
-    background-color:#2d2d2d;
+    box-shadow: 0px 5px 5px $shadow;
     border-radius: 15px;
-    box-shadow: 0px 5px 5px #bfbfbf;
 }
 header{
     position: relative;
     height: 50px;
     padding-top: 15px;
     padding-left: 20px;
-    border-radius: 15px;
-    background: linear-gradient(#4b4b4b, #262626);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background: linear-gradient($lightgrey, $darkgrey);
     color: white;
     font-size: 125%;
     z-index: 5;
@@ -29,10 +29,10 @@ table, tr, td{
     border: 1px solid black;    
 }
 #contact-table > tbody > tr:nth-child(even) > td{
-    background-color: rgb(26,26,26);
+    background-color: $darkgrey;
 }
 #contact-table > tbody > tr:nth-child(odd) > td{
-    background-color: rgb(60,60,60);
+    background-color: $darkergrey;
 }
 tbody{
     position: relative;
@@ -67,49 +67,74 @@ li{
 .phone, .address{
     display: none;
 }
-.is-showing-phone .phone{
-    display: block;
+.is-showing-phone{
+    .phone{
+        display: block;
+    }
 }
-.is-showing-phone .email{
-    display: none;
+.is-showing-phone{
+    .email{
+        display: none;
+    }
+} 
+.is-expanded{
+    .phone, .address{
+        display: block;
+        color: white;
+    }
+    .email{
+        display: block;
+        color: white;
+    }
 }
-.is-expanded .phone, .is-expanded .address{
-    display: block;
-    color: white;
-}
-.is-showing-phone .is-expanded .phone, .is-expanded .email{
-    display: block;
-    color: white;
+.is-showing-phone{
+    .is-expanded{
+        .phone{
+            display: block;
+            color: white;
+        }
+    }
 }
 .inline{
     position: relative;
     top: 0px;
     margin-left: 31px;
-}
-.inline::before{
-    content: '';
-    position: absolute;
-    display: inline-block;
-    width: 7px;
-    height: 7px;
-    top:5px;
-    left: -17px;
-    border-radius: 50%;
-    background: rgb(65,209,87);
+    &::before{
+        content: '';
+        position: absolute;
+        display: inline-block;
+        width: 7px;
+        height: 7px;
+        top:5px;
+        left: -17px;
+        border-radius: 50%;
+        background: $lightgreen;
+    }
 }
 #name{
     padding-left: 30px;
     float: left;
     color: white;
 }
-.table .span4{
-    color: white;
+.table{
+    .span4{
+        width: 40%;
+        border: 1px solid black;
+        padding: 6px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        color: white;
+    }
 }
 .span8{
     color: grey;
     font-size: 95%;
     margin-left: 111px;
     width: 61%;
+    .panel-title{
+        border-top: 1px solid black;
+        padding: 6px; 
+    }
 }
 select{
     float: right;
@@ -118,7 +143,8 @@ select{
 }
 footer{
     background-color: rgb(45,45,45);
-    border-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
     height: 50px;
     overflow: hidden;    
     z-index: 0;

@@ -2,8 +2,7 @@ $(document).ready(function(){
     var ContactsWidget = {
         ui: {
             sel: $("select"),
-            contact: $(".js-contact"),
-            lastClicked: undefined
+            contact: $(".js-contact")
         },
 
         init: function(){
@@ -19,17 +18,17 @@ $(document).ready(function(){
         },
 
         onClickContact: function(e) {
-            try{
-                if(!(lastClicked.is($(e.currentTarget)))){
-                    lastClicked.removeClass(this.isExpandedClass);
-                    lastClicked.children().removeClass(this.isOverlappingClass);
-                }
+            var $target = $(e.currentTarget);
+
+            if ($target.hasClass('is-expanded')) {
+                $target.removeClass(this.isExpandedClass);
+                $target.children().removeClass(this.isOverlappingClass);
+            } else {
+                this.ui.contact.removeClass(this.isExpandedClass);
+                this.ui.contact.children().removeClass(this.isOverlappingClass);
+                $target.addClass(this.isExpandedClass);
+                $target.children().addClass(this.isOverlappingClass);
             }
-            catch(e){
-            }
-            $(e.currentTarget).toggleClass(this.isExpandedClass);
-            $(e.currentTarget).children().toggleClass(this.isOverlappingClass);
-            lastClicked = $(e.currentTarget);
         },
 
         onChangeSelect: function() {
